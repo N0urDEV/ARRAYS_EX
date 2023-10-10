@@ -1,0 +1,221 @@
+EX#32:
+Algorithme entiers
+Tableau T(10):ENTIER
+DEBUT
+POUR I DE 0 A 9 FAIRE
+T(I)=0
+FIN POUR
+
+POUR I DE 0 A 9 FAIRE
+ECRIRE (T(I))
+FIN POUR
+FIN
+=======================================
+EX#33:
+Algorithme alphabet
+Tableau  voyelles[6] : chaine de caracteres
+
+debut
+    voyelles(0) <- "a"
+    voyelles(1) <- "e"
+    voyelles(2) <- "i"
+    voyelles(3) <- "o"
+    voyelles(4) <- "u"
+    voyelles(5) <- "y"
+    ecrire ("Les six voyelles de l'alphabet français sont :")
+    Pour i  de 0 à 5 faire
+        ecrire (voyelles(i))
+    Fin Pour
+fin
+========================================
+EX#34:
+Algorithme numbers
+
+    Tableau tableau(10) : réels
+    Variable somme : réel
+    Variable produit : réel
+    Variable moyenne : réel
+
+debut
+    somme <- 0
+    produit <- 1
+    ecrire ("saisir 10 réels :")
+    Pour i  de 0 à 9 faire
+        ecrire ("Saisissez le réel numéro ", i + 1, " : ")
+        lire (tableau(i))
+        somme <- somme + tableau(i)
+        produit <- produit * tableau(i)
+    Fin Pour
+    moyenne <- somme / 10
+    ecrire ("La somme des réels est : ", somme)
+    ecrire ("Le produit des réels est : ", produit)
+    ecrire ("La moyenne des réels est : ", moyenne)
+fin
+========================================
+EX#35:
+Algorithme produitscalaire
+    Tableau Vecteur1(3) : caractere
+    Tableau Vecteur2(3) : caractere
+    Variable ProduitScalaire : entier
+
+Début    
+    Pour i de 0 à 2
+        Lire (Vecteur1(i))
+    Fin Pour
+    
+    Pour i de 0 à 2
+        Lire (Vecteur2(i))
+    Fin Pour
+    ProduitScalaire = 0
+    Pour i de 0 à 2
+        ProduitScalaire = ProduitScalaire + (Vecteur1(i) * Vecteur2(i))
+    Fin Pour
+    ecrire ("Le produit scalaire des deux vecteurs est : ", ProduitScalaire)
+Fin
+=========================================
+EX#36:
+Algorithme min
+Tableau T(10):entier
+Début    
+    Pour i de 0 à 9
+        Ecrire ("Saisissez un entier : ")
+        Lire (T(i))
+    Fin Pour
+Minimum = T[0] 
+    Pour i de 1 à 9
+        Si T(i) < Minimum
+            Minimum = T(i) 
+        Fin Si
+    Fin Pour
+    Ecrire ("Le minimum des éléments du tableau est : " ,Minimum) 
+Fin
+==========================================
+EX#37:
+Algorithme max
+Tableau T(10):entier
+Début    
+    Pour i de 0 à 9
+        Ecrire ("Saisissez un entier : ")
+        Lire (T(i))
+    Fin Pour
+Maximum = T[0] 
+    Pour i de 1 à 9
+        Si T(i) > Maximum
+            Maximum = T(i) 
+        Fin Si
+    Fin Pour
+    Ecrire ("Le max des éléments du tableau est : " ,Maximum) 
+Fin
+===========================================
+EX#38:
+Algorithme existence
+    Tableau T(10):entier
+Début
+    Pour i de 0 à 9
+        Écrire ("Saisissez un entier : ")
+        Lire (T(i))
+    Fin Pour
+    Écrire ("Saisissez un entier n : ")
+    Lire (n)
+    E = 0 
+    Pour i de 0 à 9
+        Si T(i) = n
+            E = 1
+            Quitter la boucle
+        Fin Si
+    Fin Pour
+    Si Trouve = 1
+        Écrire (n ," se trouve dans le tableau.")
+    Sinon
+        Écrire (n ," ne se trouve pas dans le tableau.")
+    Fin Si
+Fin
+============================================
+EX#39:
+Algorithme occcurrence
+    Tableau T(50):entier
+     Variable Occurrences : entier
+Début    
+    Pour i de 0 à 49
+        Écrire ("Saisissez un entier : ")
+        Lire (T(i))
+    Fin Pour
+    Écrire ("Saisissez un entier n : ")
+    Lire (n)
+    Occurrences = 0 
+    Pour i de 0 à 49
+        Si T(i) = n
+            Occurrences = Occurrences + 1
+        Fin Si
+    Fin Pour
+    Écrire ("Le nombre d'occurrences de ", n, " dans le tableau est : ", Occurrences)   
+Fin
+=============================================
+EX#40:
+Algorithme notes
+    Tableau Notes(10):reel
+    Variables Somme, Moyenne, Notessuperieures : reels
+Début
+    Pour i de 0 à 9
+        Écrire ("Saisissez la note de l'étudiant ",i + 1," : ")
+        Lire (Notes(i))
+    Fin Pour
+    Somme = 0
+    Pour i de 0 à 9
+        Somme = Somme + Notes(i)
+    Fin Pour
+    Moyenne = Somme / 10
+    NotesSupérieures = 0
+    Pour i de 0 à 9
+        Si Notes(i) > Moyenne
+            NotesSupérieures = NotesSupérieures + 1
+        Fin Si
+    Fin Pour
+    Écrire ("Le nombre de notes supérieures à la moyenne de la classe est : " ,NotesSupérieures)
+Fin
+===============================================
+EX#41:
+Algorithme An
+    Tableau Sommes(20) : reel
+     Variables Sommeacquise, taux, an : entier
+Début
+ SommeAcquise = 1000  
+ Taux = 2  
+An = 1 
+    Pour i de 1 à 20
+        Sommes(i) = SommeAcquise  
+        SommeAcquise = SommeAcquise + (SommeAcquise * Taux / 100)  
+    Fin Pour
+    Écrire ("Année de naissance de Mohamed | Somme acquise sur le compte")
+    Pour i de 1 à 20
+        Écrire (An, " | ", Sommes(i)) 
+        An = An + 1 
+    Fin Pour
+Fin
+=================================================
+EX#42:
+Algorithme inverse
+    Tableau Tableau[6]:reel
+    Tableau TableauInverse[6]:reel
+
+Début  
+    Pour i de 0 à 5
+        Écrire ("Saisissez la valeur ", i + 1, " : ")
+        Lire (Tableau[i])
+    Fin Pour
+    Pour i de 0 à 5
+        TableauInverse[i] = Tableau[5 - i]
+    Fin Pour
+    Écrire ("Tableau original :")
+    Pour i de 0 à 5
+        Écrire (Tableau[i])
+    Fin Pour
+
+    Écrire ("Tableau inversé :")
+    Pour i de 0 à 5
+        Écrire (TableauInverse[i])
+    Fin Pour
+Fin
+================================================
+
+
