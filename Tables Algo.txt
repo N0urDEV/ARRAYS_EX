@@ -182,12 +182,12 @@ Début
  SommeAcquise = 1000  
  Taux = 2  
 An = 1 
-    Pour i de 1 à 20
+    Pour i de 0 à 19
         Sommes(i) = SommeAcquise  
         SommeAcquise = SommeAcquise + (SommeAcquise * Taux / 100)  
     Fin Pour
     Écrire ("Année de naissance de Mohamed | Somme acquise sur le compte")
-    Pour i de 1 à 20
+    Pour i de 0 à 19
         Écrire (An, " | ", Sommes(i)) 
         An = An + 1 
     Fin Pour
